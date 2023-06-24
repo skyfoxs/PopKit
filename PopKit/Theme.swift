@@ -7,4 +7,5 @@
 
 public enum PKTheme {
     case apollo
+    case vanGogh
 }
