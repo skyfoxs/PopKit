@@ -11,6 +11,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "16.4"
   spec.source       = { :git => "git@github.com:skyfoxs/PopKit.git", :tag => "#{spec.version}" }
   spec.source_files  = "PopKit/**/*.{swift,h,m}"
+  spec.swift_version = "5.8"
   
   # spec.exclude_files = "Classes/Exclude"
   # spec.resource  = "icon.png"
