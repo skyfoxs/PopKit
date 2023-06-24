@@ -16,6 +16,11 @@
 		FB1392712A47320000CA5616 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1392702A47320000CA5616 /* Preview Assets.xcassets */; };
 		FB1392762A4732A100CA5616 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392752A4732A100CA5616 /* Theme.swift */; };
 		FB1392782A47333F00CA5616 /* PopKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392772A47333F00CA5616 /* PopKit.swift */; };
+		FB13929A2A47408400CA5616 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392992A47408400CA5616 /* main.swift */; };
+		FB1392AB2A4740B200CA5616 /* PopKitGenHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1392A32A4740B200CA5616 /* PopKitGenHelper.framework */; };
+		FB1392B02A4740B200CA5616 /* PopKitGenHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392AF2A4740B200CA5616 /* PopKitGenHelperTests.swift */; };
+		FB1392B12A4740B200CA5616 /* PopKitGenHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = FB1392A52A4740B200CA5616 /* PopKitGenHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB1392BB2A47414700CA5616 /* String+camelCased.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392BA2A47414700CA5616 /* String+camelCased.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +31,33 @@
 			remoteGlobalIDString = FB13924A2A47308600CA5616;
 			remoteInfo = PopKit;
 		};
+		FB1392AC2A4740B200CA5616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB1392422A47308600CA5616 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB1392A22A4740B200CA5616;
+			remoteInfo = PopKitGenHelper;
+		};
+		FB1392B82A4740CC00CA5616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB1392422A47308600CA5616 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB1392A22A4740B200CA5616;
+			remoteInfo = PopKitGenHelper;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB1392952A47408400CA5616 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FB13924B2A47308600CA5616 /* PopKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +71,13 @@
 		FB1392702A47320000CA5616 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB1392752A4732A100CA5616 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		FB1392772A47333F00CA5616 /* PopKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopKit.swift; sourceTree = "<group>"; };
+		FB1392972A47408400CA5616 /* PopKitGen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PopKitGen; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB1392992A47408400CA5616 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FB1392A32A4740B200CA5616 /* PopKitGenHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopKitGenHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB1392A52A4740B200CA5616 /* PopKitGenHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopKitGenHelper.h; sourceTree = "<group>"; };
+		FB1392AA2A4740B200CA5616 /* PopKitGenHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopKitGenHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB1392AF2A4740B200CA5616 /* PopKitGenHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopKitGenHelperTests.swift; sourceTree = "<group>"; };
+		FB1392BA2A47414700CA5616 /* String+camelCased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+camelCased.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +103,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB1392942A47408400CA5616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB1392A02A4740B200CA5616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB1392A72A4740B200CA5616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1392AB2A4740B200CA5616 /* PopKitGenHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,6 +134,9 @@
 				FB13924D2A47308600CA5616 /* PopKit */,
 				FB1392572A47308600CA5616 /* PopKitTests */,
 				FB1392682A4731FE00CA5616 /* PopKitExample */,
+				FB1392982A47408400CA5616 /* PopKitGen */,
+				FB1392A42A4740B200CA5616 /* PopKitGenHelper */,
+				FB1392AE2A4740B200CA5616 /* PopKitGenHelperTests */,
 				FB13924C2A47308600CA5616 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +147,9 @@
 				FB13924B2A47308600CA5616 /* PopKit.framework */,
 				FB1392532A47308600CA5616 /* PopKitTests.xctest */,
 				FB1392672A4731FE00CA5616 /* PopKitExample.app */,
+				FB1392972A47408400CA5616 /* PopKitGen */,
+				FB1392A32A4740B200CA5616 /* PopKitGenHelper.framework */,
+				FB1392AA2A4740B200CA5616 /* PopKitGenHelperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +191,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FB1392982A47408400CA5616 /* PopKitGen */ = {
+			isa = PBXGroup;
+			children = (
+				FB1392992A47408400CA5616 /* main.swift */,
+			);
+			path = PopKitGen;
+			sourceTree = "<group>";
+		};
+		FB1392A42A4740B200CA5616 /* PopKitGenHelper */ = {
+			isa = PBXGroup;
+			children = (
+				FB1392A52A4740B200CA5616 /* PopKitGenHelper.h */,
+				FB1392BA2A47414700CA5616 /* String+camelCased.swift */,
+			);
+			path = PopKitGenHelper;
+			sourceTree = "<group>";
+		};
+		FB1392AE2A4740B200CA5616 /* PopKitGenHelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB1392AF2A4740B200CA5616 /* PopKitGenHelperTests.swift */,
+			);
+			path = PopKitGenHelperTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -133,6 +224,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB13925A2A47308600CA5616 /* PopKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB13929E2A4740B200CA5616 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1392B12A4740B200CA5616 /* PopKitGenHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +291,60 @@
 			productReference = FB1392672A4731FE00CA5616 /* PopKitExample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FB1392962A47408400CA5616 /* PopKitGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB13929B2A47408400CA5616 /* Build configuration list for PBXNativeTarget "PopKitGen" */;
+			buildPhases = (
+				FB1392932A47408400CA5616 /* Sources */,
+				FB1392942A47408400CA5616 /* Frameworks */,
+				FB1392952A47408400CA5616 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB1392B92A4740CC00CA5616 /* PBXTargetDependency */,
+			);
+			name = PopKitGen;
+			productName = PopKitGen;
+			productReference = FB1392972A47408400CA5616 /* PopKitGen */;
+			productType = "com.apple.product-type.tool";
+		};
+		FB1392A22A4740B200CA5616 /* PopKitGenHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB1392B22A4740B200CA5616 /* Build configuration list for PBXNativeTarget "PopKitGenHelper" */;
+			buildPhases = (
+				FB13929E2A4740B200CA5616 /* Headers */,
+				FB13929F2A4740B200CA5616 /* Sources */,
+				FB1392A02A4740B200CA5616 /* Frameworks */,
+				FB1392A12A4740B200CA5616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopKitGenHelper;
+			productName = PopKitGenHelper;
+			productReference = FB1392A32A4740B200CA5616 /* PopKitGenHelper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB1392A92A4740B200CA5616 /* PopKitGenHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB1392B52A4740B200CA5616 /* Build configuration list for PBXNativeTarget "PopKitGenHelperTests" */;
+			buildPhases = (
+				FB1392A62A4740B200CA5616 /* Sources */,
+				FB1392A72A4740B200CA5616 /* Frameworks */,
+				FB1392A82A4740B200CA5616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB1392AD2A4740B200CA5616 /* PBXTargetDependency */,
+			);
+			name = PopKitGenHelperTests;
+			productName = PopKitGenHelperTests;
+			productReference = FB1392AA2A4740B200CA5616 /* PopKitGenHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,6 +365,16 @@
 					FB1392662A4731FE00CA5616 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
+					FB1392962A47408400CA5616 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					FB1392A22A4740B200CA5616 = {
+						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+					FB1392A92A4740B200CA5616 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
 			buildConfigurationList = FB1392452A47308600CA5616 /* Build configuration list for PBXProject "PopKit" */;
@@ -230,6 +393,9 @@
 				FB13924A2A47308600CA5616 /* PopKit */,
 				FB1392522A47308600CA5616 /* PopKitTests */,
 				FB1392662A4731FE00CA5616 /* PopKitExample */,
+				FB1392962A47408400CA5616 /* PopKitGen */,
+				FB1392A22A4740B200CA5616 /* PopKitGenHelper */,
+				FB1392A92A4740B200CA5616 /* PopKitGenHelperTests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +421,20 @@
 			files = (
 				FB1392712A47320000CA5616 /* Preview Assets.xcassets in Resources */,
 				FB13926E2A47320000CA5616 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB1392A12A4740B200CA5616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB1392A82A4740B200CA5616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +467,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB1392932A47408400CA5616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB13929A2A47408400CA5616 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB13929F2A4740B200CA5616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1392BB2A47414700CA5616 /* String+camelCased.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB1392A62A4740B200CA5616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1392B02A4740B200CA5616 /* PopKitGenHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -294,6 +498,16 @@
 			isa = PBXTargetDependency;
 			target = FB13924A2A47308600CA5616 /* PopKit */;
 			targetProxy = FB1392552A47308600CA5616 /* PBXContainerItemProxy */;
+		};
+		FB1392AD2A4740B200CA5616 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB1392A22A4740B200CA5616 /* PopKitGenHelper */;
+			targetProxy = FB1392AC2A4740B200CA5616 /* PBXContainerItemProxy */;
+		};
+		FB1392B92A4740CC00CA5616 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB1392A22A4740B200CA5616 /* PopKitGenHelper */;
+			targetProxy = FB1392B82A4740CC00CA5616 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -569,6 +783,129 @@
 			};
 			name = Release;
 		};
+		FB13929C2A47408400CA5616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FB13929D2A47408400CA5616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FB1392B32A4740B200CA5616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PopKitGenHelper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FB1392B42A4740B200CA5616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PopKitGenHelper;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FB1392B62A4740B200CA5616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PopKitGenHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FB1392B72A4740B200CA5616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PopKitGenHelperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -604,6 +941,33 @@
 			buildConfigurations = (
 				FB1392722A47320000CA5616 /* Debug */,
 				FB1392732A47320000CA5616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB13929B2A47408400CA5616 /* Build configuration list for PBXNativeTarget "PopKitGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB13929C2A47408400CA5616 /* Debug */,
+				FB13929D2A47408400CA5616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB1392B22A4740B200CA5616 /* Build configuration list for PBXNativeTarget "PopKitGenHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB1392B32A4740B200CA5616 /* Debug */,
+				FB1392B42A4740B200CA5616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB1392B52A4740B200CA5616 /* Build configuration list for PBXNativeTarget "PopKitGenHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB1392B62A4740B200CA5616 /* Debug */,
+				FB1392B72A4740B200CA5616 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
