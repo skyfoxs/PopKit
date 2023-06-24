@@ -10,6 +10,10 @@
 		FB1392542A47308600CA5616 /* PopKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB13924B2A47308600CA5616 /* PopKit.framework */; };
 		FB1392592A47308600CA5616 /* PopKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392582A47308600CA5616 /* PopKitTests.swift */; };
 		FB13925A2A47308600CA5616 /* PopKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FB13924E2A47308600CA5616 /* PopKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB13926A2A4731FE00CA5616 /* PopKitExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392692A4731FE00CA5616 /* PopKitExampleApp.swift */; };
+		FB13926C2A4731FE00CA5616 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB13926B2A4731FE00CA5616 /* ContentView.swift */; };
+		FB13926E2A47320000CA5616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB13926D2A47320000CA5616 /* Assets.xcassets */; };
+		FB1392712A47320000CA5616 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1392702A47320000CA5616 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,11 @@
 		FB13924E2A47308600CA5616 /* PopKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopKit.h; sourceTree = "<group>"; };
 		FB1392532A47308600CA5616 /* PopKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1392582A47308600CA5616 /* PopKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopKitTests.swift; sourceTree = "<group>"; };
+		FB1392672A4731FE00CA5616 /* PopKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB1392692A4731FE00CA5616 /* PopKitExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopKitExampleApp.swift; sourceTree = "<group>"; };
+		FB13926B2A4731FE00CA5616 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB13926D2A47320000CA5616 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB1392702A47320000CA5616 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +54,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB1392642A4731FE00CA5616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -53,6 +69,7 @@
 			children = (
 				FB13924D2A47308600CA5616 /* PopKit */,
 				FB1392572A47308600CA5616 /* PopKitTests */,
+				FB1392682A4731FE00CA5616 /* PopKitExample */,
 				FB13924C2A47308600CA5616 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +79,7 @@
 			children = (
 				FB13924B2A47308600CA5616 /* PopKit.framework */,
 				FB1392532A47308600CA5616 /* PopKitTests.xctest */,
+				FB1392672A4731FE00CA5616 /* PopKitExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +98,25 @@
 				FB1392582A47308600CA5616 /* PopKitTests.swift */,
 			);
 			path = PopKitTests;
+			sourceTree = "<group>";
+		};
+		FB1392682A4731FE00CA5616 /* PopKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				FB1392692A4731FE00CA5616 /* PopKitExampleApp.swift */,
+				FB13926B2A4731FE00CA5616 /* ContentView.swift */,
+				FB13926D2A47320000CA5616 /* Assets.xcassets */,
+				FB13926F2A47320000CA5616 /* Preview Content */,
+			);
+			path = PopKitExample;
+			sourceTree = "<group>";
+		};
+		FB13926F2A47320000CA5616 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB1392702A47320000CA5616 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +169,23 @@
 			productReference = FB1392532A47308600CA5616 /* PopKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FB1392662A4731FE00CA5616 /* PopKitExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB1392742A47320000CA5616 /* Build configuration list for PBXNativeTarget "PopKitExample" */;
+			buildPhases = (
+				FB1392632A4731FE00CA5616 /* Sources */,
+				FB1392642A4731FE00CA5616 /* Frameworks */,
+				FB1392652A4731FE00CA5616 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopKitExample;
+			productName = PopKitExample;
+			productReference = FB1392672A4731FE00CA5616 /* PopKitExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,6 +200,9 @@
 						CreatedOnToolsVersion = 14.3.1;
 					};
 					FB1392522A47308600CA5616 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					FB1392662A4731FE00CA5616 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
@@ -165,6 +222,7 @@
 			targets = (
 				FB13924A2A47308600CA5616 /* PopKit */,
 				FB1392522A47308600CA5616 /* PopKitTests */,
+				FB1392662A4731FE00CA5616 /* PopKitExample */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +242,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB1392652A4731FE00CA5616 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB1392712A47320000CA5616 /* Preview Assets.xcassets in Resources */,
+				FB13926E2A47320000CA5616 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -199,6 +266,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB1392592A47308600CA5616 /* PopKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB1392632A4731FE00CA5616 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB13926C2A4731FE00CA5616 /* ContentView.swift in Sources */,
+				FB13926A2A4731FE00CA5616 /* PopKitExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +499,62 @@
 			};
 			name = Release;
 		};
+		FB1392722A47320000CA5616 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PopKitExample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PopKitExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB1392732A47320000CA5616 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PopKitExample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PopKitExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -449,6 +581,15 @@
 			buildConfigurations = (
 				FB1392612A47308600CA5616 /* Debug */,
 				FB1392622A47308600CA5616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB1392742A47320000CA5616 /* Build configuration list for PBXNativeTarget "PopKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB1392722A47320000CA5616 /* Debug */,
+				FB1392732A47320000CA5616 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
