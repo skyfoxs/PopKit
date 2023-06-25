@@ -26,6 +26,8 @@
 		FB1392C92A48731500CA5616 /* PKColor+Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392C82A48731500CA5616 /* PKColor+Apollo.swift */; };
 		FB1392CB2A48733A00CA5616 /* PKColor+VanGogh.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392CA2A48733A00CA5616 /* PKColor+VanGogh.swift */; };
 		FB1392CE2A4873E500CA5616 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392CD2A4873E500CA5616 /* UIColor+Hex.swift */; };
+		FB1392D02A48763200CA5616 /* FlattenKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392CF2A48763200CA5616 /* FlattenKey.swift */; };
+		FB1392D22A48774E00CA5616 /* Array+unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392D12A48774E00CA5616 /* Array+unique.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		FB1392CA2A48733A00CA5616 /* PKColor+VanGogh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PKColor+VanGogh.swift"; sourceTree = "<group>"; };
 		FB1392CC2A48737E00CA5616 /* VanGogh.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = VanGogh.json; sourceTree = "<group>"; };
 		FB1392CD2A4873E500CA5616 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		FB1392CF2A48763200CA5616 /* FlattenKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlattenKey.swift; sourceTree = "<group>"; };
+		FB1392D12A48774E00CA5616 /* Array+unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+unique.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +221,8 @@
 			children = (
 				FB1392A52A4740B200CA5616 /* PopKitGenHelper.h */,
 				FB1392BA2A47414700CA5616 /* String+camelCased.swift */,
+				FB1392CF2A48763200CA5616 /* FlattenKey.swift */,
+				FB1392D12A48774E00CA5616 /* Array+unique.swift */,
 			);
 			path = PopKitGenHelper;
 			sourceTree = "<group>";
@@ -543,7 +549,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB1392D02A48763200CA5616 /* FlattenKey.swift in Sources */,
 				FB1392BB2A47414700CA5616 /* String+camelCased.swift in Sources */,
+				FB1392D22A48774E00CA5616 /* Array+unique.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
