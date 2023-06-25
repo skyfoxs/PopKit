@@ -30,6 +30,8 @@ extension SwiftCodeBuilder {
         with dictionary: [String: Any]
     ) -> String {
         """
+        // This code was generated with PopKitGen
+        // DO NOT change manually
         import UIKit
 
         extension PKColor {

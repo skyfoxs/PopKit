@@ -81,6 +81,8 @@ do {
         }
     }
     let pkColor = """
+        // This code was generated with PopKitGen
+        // DO NOT change manually
         import UIKit
 
         \(SwiftCodeBuilder.makePKColor(from: keys))

@@ -40,6 +40,8 @@ final class SwiftCodeBuilder_PKColorTests: XCTestCase {
                 ]
             ),
             """
+            // This code was generated with PopKitGen
+            // DO NOT change manually
             import UIKit
 
             extension PKColor {
