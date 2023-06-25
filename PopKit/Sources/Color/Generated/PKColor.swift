@@ -1,16 +1,20 @@
-//
-//  Color.swift
-//  PopKit
-//
-//  Created by Pakornpat Sinjiranon on 25/6/23.
-//
-
+// This code was generated with PopKitGen
+// DO NOT change manually
 import UIKit
 
 struct PKColor {
+    let backgroundPrimary: UIColor
+    let backgroundSecondary: UIColor
+
     func uiColor(for alias: PKColorAlias) -> UIColor {
-        fatalError("not implemented")
+        switch alias {
+        case .backgroundPrimary: return backgroundPrimary
+        case .backgroundSecondary: return backgroundSecondary
+        }
     }
 }
 
-public enum PKColorAlias {}
+public enum PKColorAlias {
+    case backgroundPrimary
+    case backgroundSecondary
+}

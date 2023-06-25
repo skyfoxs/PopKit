@@ -1,12 +1,12 @@
-//
-//  PKColor+Apollo.swift
-//  PopKit
-//
-//  Created by Pakornpat Sinjiranon on 25/6/23.
-//
+// This code was generated with PopKitGen
+// DO NOT change manually
+import UIKit
 
 extension PKColor {
     static func makeApollo() -> PKColor {
-        PKColor()
+        PKColor(
+            backgroundPrimary: UIColor(hex: "#ffffffff")!,
+            backgroundSecondary: UIColor(hex: "#f5f6f7ff")!
+        )
     }
 }
