@@ -21,6 +21,11 @@
 		FB1392B02A4740B200CA5616 /* PopKitGenHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392AF2A4740B200CA5616 /* PopKitGenHelperTests.swift */; };
 		FB1392B12A4740B200CA5616 /* PopKitGenHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = FB1392A52A4740B200CA5616 /* PopKitGenHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB1392BB2A47414700CA5616 /* String+camelCased.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392BA2A47414700CA5616 /* String+camelCased.swift */; };
+		FB1392C42A486E0A00CA5616 /* ColorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392C32A486E0A00CA5616 /* ColorBuilder.swift */; };
+		FB1392C72A486F6700CA5616 /* PKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392C62A486F6700CA5616 /* PKColor.swift */; };
+		FB1392C92A48731500CA5616 /* PKColor+Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392C82A48731500CA5616 /* PKColor+Apollo.swift */; };
+		FB1392CB2A48733A00CA5616 /* PKColor+VanGogh.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392CA2A48733A00CA5616 /* PKColor+VanGogh.swift */; };
+		FB1392CE2A4873E500CA5616 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392CD2A4873E500CA5616 /* UIColor+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +83,13 @@
 		FB1392AA2A4740B200CA5616 /* PopKitGenHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopKitGenHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1392AF2A4740B200CA5616 /* PopKitGenHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopKitGenHelperTests.swift; sourceTree = "<group>"; };
 		FB1392BA2A47414700CA5616 /* String+camelCased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+camelCased.swift"; sourceTree = "<group>"; };
+		FB1392C12A486C6C00CA5616 /* Apollo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Apollo.json; sourceTree = "<group>"; };
+		FB1392C32A486E0A00CA5616 /* ColorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBuilder.swift; sourceTree = "<group>"; };
+		FB1392C62A486F6700CA5616 /* PKColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKColor.swift; sourceTree = "<group>"; };
+		FB1392C82A48731500CA5616 /* PKColor+Apollo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PKColor+Apollo.swift"; sourceTree = "<group>"; };
+		FB1392CA2A48733A00CA5616 /* PKColor+VanGogh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PKColor+VanGogh.swift"; sourceTree = "<group>"; };
+		FB1392CC2A48737E00CA5616 /* VanGogh.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = VanGogh.json; sourceTree = "<group>"; };
+		FB1392CD2A4873E500CA5616 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +170,9 @@
 		FB13924D2A47308600CA5616 /* PopKit */ = {
 			isa = PBXGroup;
 			children = (
+				FB1392BF2A486BCC00CA5616 /* Sources */,
+				FB1392C02A486C2200CA5616 /* DesignAssets */,
 				FB13924E2A47308600CA5616 /* PopKit.h */,
-				FB1392752A4732A100CA5616 /* Theme.swift */,
-				FB1392772A47333F00CA5616 /* PopKit.swift */,
 			);
 			path = PopKit;
 			sourceTree = "<group>";
@@ -222,6 +234,45 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB1392BF2A486BCC00CA5616 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FB1392C22A486DDB00CA5616 /* Color */,
+				FB1392752A4732A100CA5616 /* Theme.swift */,
+				FB1392772A47333F00CA5616 /* PopKit.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		FB1392C02A486C2200CA5616 /* DesignAssets */ = {
+			isa = PBXGroup;
+			children = (
+				FB1392C12A486C6C00CA5616 /* Apollo.json */,
+				FB1392CC2A48737E00CA5616 /* VanGogh.json */,
+			);
+			path = DesignAssets;
+			sourceTree = "<group>";
+		};
+		FB1392C22A486DDB00CA5616 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				FB1392C32A486E0A00CA5616 /* ColorBuilder.swift */,
+				FB1392C52A486E4E00CA5616 /* Generated */,
+				FB1392CD2A4873E500CA5616 /* UIColor+Hex.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		FB1392C52A486E4E00CA5616 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				FB1392C62A486F6700CA5616 /* PKColor.swift */,
+				FB1392C82A48731500CA5616 /* PKColor+Apollo.swift */,
+				FB1392CA2A48733A00CA5616 /* PKColor+VanGogh.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,7 +504,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB1392CE2A4873E500CA5616 /* UIColor+Hex.swift in Sources */,
+				FB1392C92A48731500CA5616 /* PKColor+Apollo.swift in Sources */,
 				FB1392782A47333F00CA5616 /* PopKit.swift in Sources */,
+				FB1392C42A486E0A00CA5616 /* ColorBuilder.swift in Sources */,
+				FB1392CB2A48733A00CA5616 /* PKColor+VanGogh.swift in Sources */,
+				FB1392C72A486F6700CA5616 /* PKColor.swift in Sources */,
 				FB1392762A4732A100CA5616 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

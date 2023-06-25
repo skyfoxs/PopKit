@@ -1,0 +1,12 @@
+{
+    "Color": {
+        "BG": {
+            "Primary": {
+                "value": "#0040C0ff"
+            },
+            "Secondary" : {
+                "value": "#3272F3ff"
+            }
+        }
+    }
+}
