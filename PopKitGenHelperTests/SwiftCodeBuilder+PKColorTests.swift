@@ -52,6 +52,7 @@ final class SwiftCodeBuilder_PKColorTests: XCTestCase {
                     )
                 }
             }
+
             """
         )
     }

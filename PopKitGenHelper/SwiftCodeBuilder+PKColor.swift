@@ -49,6 +49,7 @@ extension SwiftCodeBuilder {
                 )
             }
         }
+
         """
     }
 

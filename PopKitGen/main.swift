@@ -10,8 +10,8 @@ import PopKitGenHelper
 
 #if DEBUG
 let directoryPath = "/Users/pakornpat/workspace/experiment/PopKit/PopKit/DesignAssets"
-//var outputPath: String? = "/Users/pakornpat/workspace/experiment/PopKit/PopKit/Sources/Color/Generated"
-var outputPath: String?
+var outputPath: String? = "/Users/pakornpat/workspace/experiment/PopKit/PopKit/Sources/Color/Generated"
+//var outputPath: String?
 #else
 guard 2...3 ~= CommandLine.arguments.count else {
     print("Please provide the path to DesignAssets directory")
@@ -88,6 +88,7 @@ do {
         \(SwiftCodeBuilder.makePKColor(from: keys))
 
         \(SwiftCodeBuilder.makeEnum("PKColorAlias", with: keys))
+
         """
     if let outputPath {
         try pkColor.write(
