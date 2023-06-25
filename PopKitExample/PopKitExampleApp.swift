@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+import PopKit
 
 @main
 struct PopKitExampleApp: App {
+    init() {
+        PopKit.setUp(theme: .vanGogh)
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PopKit
 
 struct ContentView: View {
     var body: some View {
@@ -14,6 +15,9 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+                .foregroundColor(
+                    Color(uiColor: PopKit.color(for: .backgroundPrimary))
+                )
         }
         .padding()
     }

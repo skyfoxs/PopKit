@@ -58,6 +58,13 @@
 			remoteGlobalIDString = FB1392A22A4740B200CA5616;
 			remoteInfo = PopKitGenHelper;
 		};
+		FB1392E12A48A64E00CA5616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB1392422A47308600CA5616 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB13924A2A47308600CA5616;
+			remoteInfo = PopKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -368,6 +375,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FB1392E22A48A64E00CA5616 /* PBXTargetDependency */,
 			);
 			name = PopKitExample;
 			productName = PopKitExample;
@@ -604,6 +612,11 @@
 			isa = PBXTargetDependency;
 			target = FB1392A22A4740B200CA5616 /* PopKitGenHelper */;
 			targetProxy = FB1392B82A4740CC00CA5616 /* PBXContainerItemProxy */;
+		};
+		FB1392E22A48A64E00CA5616 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB13924A2A47308600CA5616 /* PopKit */;
+			targetProxy = FB1392E12A48A64E00CA5616 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
