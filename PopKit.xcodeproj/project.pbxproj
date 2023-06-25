@@ -138,6 +138,7 @@
 				FB1392A42A4740B200CA5616 /* PopKitGenHelper */,
 				FB1392AE2A4740B200CA5616 /* PopKitGenHelperTests */,
 				FB13924C2A47308600CA5616 /* Products */,
+				FB1392BD2A47D8F800CA5616 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,6 +215,13 @@
 				FB1392AF2A4740B200CA5616 /* PopKitGenHelperTests.swift */,
 			);
 			path = PopKitGenHelperTests;
+			sourceTree = "<group>";
+		};
+		FB1392BD2A47D8F800CA5616 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -825,6 +833,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
@@ -859,6 +868,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
