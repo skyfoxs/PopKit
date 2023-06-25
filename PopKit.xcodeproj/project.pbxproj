@@ -18,9 +18,8 @@
 		FB1392782A47333F00CA5616 /* PopKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392772A47333F00CA5616 /* PopKit.swift */; };
 		FB13929A2A47408400CA5616 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392992A47408400CA5616 /* main.swift */; };
 		FB1392AB2A4740B200CA5616 /* PopKitGenHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1392A32A4740B200CA5616 /* PopKitGenHelper.framework */; };
-		FB1392B02A4740B200CA5616 /* PopKitGenHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392AF2A4740B200CA5616 /* PopKitGenHelperTests.swift */; };
 		FB1392B12A4740B200CA5616 /* PopKitGenHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = FB1392A52A4740B200CA5616 /* PopKitGenHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB1392BB2A47414700CA5616 /* String+camelCased.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392BA2A47414700CA5616 /* String+camelCased.swift */; };
+		FB1392BB2A47414700CA5616 /* String+cased.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392BA2A47414700CA5616 /* String+cased.swift */; };
 		FB1392C42A486E0A00CA5616 /* ColorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392C32A486E0A00CA5616 /* ColorBuilder.swift */; };
 		FB1392C72A486F6700CA5616 /* PKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392C62A486F6700CA5616 /* PKColor.swift */; };
 		FB1392C92A48731500CA5616 /* PKColor+Apollo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392C82A48731500CA5616 /* PKColor+Apollo.swift */; };
@@ -30,6 +29,11 @@
 		FB1392D22A48774E00CA5616 /* Array+unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392D12A48774E00CA5616 /* Array+unique.swift */; };
 		FB1392D42A488A0000CA5616 /* SwiftCodeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392D32A488A0000CA5616 /* SwiftCodeBuilder.swift */; };
 		FB1392D62A488E7E00CA5616 /* SwiftCodeBuilder+PKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392D52A488E7E00CA5616 /* SwiftCodeBuilder+PKColor.swift */; };
+		FB1392D82A48924400CA5616 /* FlattenKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392D72A48924400CA5616 /* FlattenKeyTests.swift */; };
+		FB1392DA2A4893A400CA5616 /* String+casedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392D92A4893A400CA5616 /* String+casedTests.swift */; };
+		FB1392DC2A4895AF00CA5616 /* Array+uniqueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392DB2A4895AF00CA5616 /* Array+uniqueTests.swift */; };
+		FB1392DE2A48965900CA5616 /* SwiftCodeBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392DD2A48965900CA5616 /* SwiftCodeBuilderTests.swift */; };
+		FB1392E02A48979500CA5616 /* SwiftCodeBuilder+PKColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392DF2A48979500CA5616 /* SwiftCodeBuilder+PKColorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +89,7 @@
 		FB1392A32A4740B200CA5616 /* PopKitGenHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopKitGenHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1392A52A4740B200CA5616 /* PopKitGenHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopKitGenHelper.h; sourceTree = "<group>"; };
 		FB1392AA2A4740B200CA5616 /* PopKitGenHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopKitGenHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB1392AF2A4740B200CA5616 /* PopKitGenHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopKitGenHelperTests.swift; sourceTree = "<group>"; };
-		FB1392BA2A47414700CA5616 /* String+camelCased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+camelCased.swift"; sourceTree = "<group>"; };
+		FB1392BA2A47414700CA5616 /* String+cased.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+cased.swift"; sourceTree = "<group>"; };
 		FB1392C12A486C6C00CA5616 /* Apollo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Apollo.json; sourceTree = "<group>"; };
 		FB1392C32A486E0A00CA5616 /* ColorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBuilder.swift; sourceTree = "<group>"; };
 		FB1392C62A486F6700CA5616 /* PKColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKColor.swift; sourceTree = "<group>"; };
@@ -98,6 +101,11 @@
 		FB1392D12A48774E00CA5616 /* Array+unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+unique.swift"; sourceTree = "<group>"; };
 		FB1392D32A488A0000CA5616 /* SwiftCodeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCodeBuilder.swift; sourceTree = "<group>"; };
 		FB1392D52A488E7E00CA5616 /* SwiftCodeBuilder+PKColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftCodeBuilder+PKColor.swift"; sourceTree = "<group>"; };
+		FB1392D72A48924400CA5616 /* FlattenKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlattenKeyTests.swift; sourceTree = "<group>"; };
+		FB1392D92A4893A400CA5616 /* String+casedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+casedTests.swift"; sourceTree = "<group>"; };
+		FB1392DB2A4895AF00CA5616 /* Array+uniqueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+uniqueTests.swift"; sourceTree = "<group>"; };
+		FB1392DD2A48965900CA5616 /* SwiftCodeBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCodeBuilderTests.swift; sourceTree = "<group>"; };
+		FB1392DF2A48979500CA5616 /* SwiftCodeBuilder+PKColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftCodeBuilder+PKColorTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,7 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				FB1392A52A4740B200CA5616 /* PopKitGenHelper.h */,
-				FB1392BA2A47414700CA5616 /* String+camelCased.swift */,
+				FB1392BA2A47414700CA5616 /* String+cased.swift */,
 				FB1392CF2A48763200CA5616 /* FlattenKey.swift */,
 				FB1392D12A48774E00CA5616 /* Array+unique.swift */,
 				FB1392D32A488A0000CA5616 /* SwiftCodeBuilder.swift */,
@@ -236,7 +244,11 @@
 		FB1392AE2A4740B200CA5616 /* PopKitGenHelperTests */ = {
 			isa = PBXGroup;
 			children = (
-				FB1392AF2A4740B200CA5616 /* PopKitGenHelperTests.swift */,
+				FB1392D72A48924400CA5616 /* FlattenKeyTests.swift */,
+				FB1392D92A4893A400CA5616 /* String+casedTests.swift */,
+				FB1392DB2A4895AF00CA5616 /* Array+uniqueTests.swift */,
+				FB1392DD2A48965900CA5616 /* SwiftCodeBuilderTests.swift */,
+				FB1392DF2A48979500CA5616 /* SwiftCodeBuilder+PKColorTests.swift */,
 			);
 			path = PopKitGenHelperTests;
 			sourceTree = "<group>";
@@ -558,7 +570,7 @@
 				FB1392D42A488A0000CA5616 /* SwiftCodeBuilder.swift in Sources */,
 				FB1392D02A48763200CA5616 /* FlattenKey.swift in Sources */,
 				FB1392D62A488E7E00CA5616 /* SwiftCodeBuilder+PKColor.swift in Sources */,
-				FB1392BB2A47414700CA5616 /* String+camelCased.swift in Sources */,
+				FB1392BB2A47414700CA5616 /* String+cased.swift in Sources */,
 				FB1392D22A48774E00CA5616 /* Array+unique.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,7 +579,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB1392B02A4740B200CA5616 /* PopKitGenHelperTests.swift in Sources */,
+				FB1392DE2A48965900CA5616 /* SwiftCodeBuilderTests.swift in Sources */,
+				FB1392D82A48924400CA5616 /* FlattenKeyTests.swift in Sources */,
+				FB1392DC2A4895AF00CA5616 /* Array+uniqueTests.swift in Sources */,
+				FB1392E02A48979500CA5616 /* SwiftCodeBuilder+PKColorTests.swift in Sources */,
+				FB1392DA2A4893A400CA5616 /* String+casedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

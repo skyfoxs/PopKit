@@ -33,7 +33,7 @@ extension SwiftCodeBuilder {
         import UIKit
 
         extension PKColor {
-            static func make\(theme.uppercasingFirst)() -> PKColor {
+            static func make\(theme.uppercasedFirst)() -> PKColor {
                 PKColor(
         \(keys
                 .map { key in
