@@ -5,40 +5,8 @@
 //  Created by Pakornpat Sinjiranon on 24/6/23.
 //
 
+import Foundation
 import PopKitGenHelper
-
-let apolloJSON = """
-{
-    "Color": {
-        "BG": {
-            "Primary": {
-                "value": "#ffffffff"
-            },
-            "Secondary" : {
-                "value": "#f5f6f7ff"
-            }
-        }
-    }
-}
-""".data(using: .utf8)!
-
-let apollo = try! JSONSerialization.jsonObject(with: apolloJSON) as! [String: Any]
-
-var color = [String: Any]()
-flattenKey(
-    dictionary: apollo["Color"] as! [String: Any],
-    keyFormatter: { key in
-        key
-            .replacingOccurrences(of: "BG", with: "Background")
-            .split(separator: "-")
-            .uniqued()
-            .joined()
-            .camelCased
-    },
-    result: &color
-)
-
-let keys = Array(color.keys.sorted())
 
 func makePKColorAlias(from keys: [String]) -> String {
     func makeEnumCase(for key: String) -> String {
@@ -48,8 +16,6 @@ func makePKColorAlias(from keys: [String]) -> String {
     let code = ["public enum PKColorAlias {"] + keys.map(makeEnumCase(for:)) + ["}"]
     return code.joined(separator: "\n")
 }
-
-print(makePKColorAlias(from: keys))
 
 func makePKColor(from keys: [String]) -> String {
     func makeProperty(for key: String) -> String {
@@ -70,8 +36,6 @@ func makePKColor(from keys: [String]) -> String {
     code += ["}"]
     return code.joined(separator: "\n")
 }
-
-print(makePKColor(from: keys))
 
 func makePKColorExtension(for theme: String, keys: [String], with dictionary: [String: Any]) -> String {
     func makeParameter(for key: String, value: String) -> String {
@@ -97,4 +61,46 @@ func makePKColorExtension(for theme: String, keys: [String], with dictionary: [S
     return code.joined(separator: "\n")
 }
 
-print(makePKColorExtension(for: "apollo", keys: keys, with: color))
+let directoryPath = "/Users/pakornpat/workspace/experiment/PopKit/PopKit/DesignAssets"
+
+do {
+    let fileManager = FileManager.default
+    let fileURLs = try fileManager.contentsOfDirectory(
+        at: URL(fileURLWithPath: directoryPath),
+        includingPropertiesForKeys: nil
+    )
+
+    var keys = [String]()
+    for fileURL in fileURLs {
+        print("Start generate for:", fileURL.deletingPathExtension().lastPathComponent)
+
+        let data = try Data(contentsOf: fileURL)
+        let colorConfig = try JSONSerialization.jsonObject(with: data) as! [String: Any]
+        var color = [String: Any]()
+        flattenKey(
+            dictionary: colorConfig["Color"] as! [String: Any],
+            keyFormatter: { key in
+                key
+                    .replacingOccurrences(of: "BG", with: "Background")
+                    .split(separator: "-")
+                    .uniqued()
+                    .joined()
+                    .camelCased
+            },
+            result: &color
+        )
+        keys = Array(color.keys.sorted())
+        print(
+            makePKColorExtension(
+                for: fileURL.deletingPathExtension().lastPathComponent,
+                keys: keys,
+                with: color
+            )
+        )
+    }
+    print(makePKColorAlias(from: keys))
+    print(makePKColor(from: keys))
+
+} catch {
+    print("Error: \(error.localizedDescription)")
+}
