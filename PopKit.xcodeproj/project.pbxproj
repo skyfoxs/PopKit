@@ -28,6 +28,8 @@
 		FB1392CE2A4873E500CA5616 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392CD2A4873E500CA5616 /* UIColor+Hex.swift */; };
 		FB1392D02A48763200CA5616 /* FlattenKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392CF2A48763200CA5616 /* FlattenKey.swift */; };
 		FB1392D22A48774E00CA5616 /* Array+unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392D12A48774E00CA5616 /* Array+unique.swift */; };
+		FB1392D42A488A0000CA5616 /* SwiftCodeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392D32A488A0000CA5616 /* SwiftCodeBuilder.swift */; };
+		FB1392D62A488E7E00CA5616 /* SwiftCodeBuilder+PKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1392D52A488E7E00CA5616 /* SwiftCodeBuilder+PKColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		FB1392CD2A4873E500CA5616 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		FB1392CF2A48763200CA5616 /* FlattenKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlattenKey.swift; sourceTree = "<group>"; };
 		FB1392D12A48774E00CA5616 /* Array+unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+unique.swift"; sourceTree = "<group>"; };
+		FB1392D32A488A0000CA5616 /* SwiftCodeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCodeBuilder.swift; sourceTree = "<group>"; };
+		FB1392D52A488E7E00CA5616 /* SwiftCodeBuilder+PKColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftCodeBuilder+PKColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +227,8 @@
 				FB1392BA2A47414700CA5616 /* String+camelCased.swift */,
 				FB1392CF2A48763200CA5616 /* FlattenKey.swift */,
 				FB1392D12A48774E00CA5616 /* Array+unique.swift */,
+				FB1392D32A488A0000CA5616 /* SwiftCodeBuilder.swift */,
+				FB1392D52A488E7E00CA5616 /* SwiftCodeBuilder+PKColor.swift */,
 			);
 			path = PopKitGenHelper;
 			sourceTree = "<group>";
@@ -549,7 +555,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB1392D42A488A0000CA5616 /* SwiftCodeBuilder.swift in Sources */,
 				FB1392D02A48763200CA5616 /* FlattenKey.swift in Sources */,
+				FB1392D62A488E7E00CA5616 /* SwiftCodeBuilder+PKColor.swift in Sources */,
 				FB1392BB2A47414700CA5616 /* String+camelCased.swift in Sources */,
 				FB1392D22A48774E00CA5616 /* Array+unique.swift in Sources */,
 			);
